@@ -2,6 +2,9 @@
 
 const credits = 23580;
 const pricePerDroid = 3000;
+let message;
+let totalPrice;
+let userCreditsBalance;
 
 let userOrder = prompt("Введите количество дроидов к заказу", " ");
 
@@ -18,6 +21,8 @@ if (userOrder == null) {
   }
   if (totalPrice < credits) {
     let userCreditsBalance = credits - totalPrice;
-    console.log (`Вы купили ${userOrder} дроидов, на счету осталось ${userCreditsBalance} кредитов.`)
+    console.log(
+      `Вы купили ${userOrder} дроидов, на счету осталось ${userCreditsBalance} кредитов.`
+    );
   }
 }
