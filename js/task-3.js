@@ -5,15 +5,14 @@ let message;
 let userPassword = prompt("Введите пароль", " ");
 
 if (userPassword == null) {
-  let message = "Отменено пользователем!";
-  alert(message);
+  message = "Отменено пользователем!";
 } else {
   if (userPassword == ADMIN_PASSWORD) {
-    let message = "Добро пожаловать!";
-    alert(message);
+    message = "Добро пожаловать!";
   }
   if (userPassword != ADMIN_PASSWORD) {
-    let message = "Доступ запрещен, неверный пароль!";
-    alert(message);
+    message = "Доступ запрещен, неверный пароль!";
   }
 }
+
+alert(message);
