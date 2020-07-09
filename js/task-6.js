@@ -6,7 +6,7 @@ let total = 0;
 do {
   let input = prompt("Введите число.");
 
-  if (input == null) {
+  if (input === null) {
     break;
   }
 
