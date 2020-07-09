@@ -18,7 +18,7 @@ if (userOrder === null) {
   if (totalPrice > credits) {
     message = "Недостаточно средств на счету!";
   }
-  if (totalPrice < credits) {
+  if (totalPrice <= credits) {
     userCreditsBalance = credits - totalPrice;
     message = `Вы купили ${userOrder} дроидов, на счету осталось ${userCreditsBalance} кредитов.`;
   }
